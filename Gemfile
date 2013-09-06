@@ -6,6 +6,8 @@ gem "i18n", "~> 0.6.0"
 gem "coderay", "~> 1.0.9"
 gem "fastercsv", "~> 1.5.0", :platforms => [:mri_18, :mingw_18, :jruby]
 gem "builder", "3.0.0"
+gem "newrelic_rpm", "3.6.3.104"
+
 
 ###### UFF ADDITIONS
 group :production do
@@ -88,7 +90,7 @@ end
 
 platforms :mri_19, :mingw_19 do
   group :mysql do
-    gem "mysql2", "~> 0.3.11"
+    gem "mysql2", "0.3.11"
   end
 end
 
